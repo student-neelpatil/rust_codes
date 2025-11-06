@@ -46,6 +46,37 @@
 
 //3]using other methods
 
+// struct Person{
+  
+//   name:String,         
+//   age:u8,
+  
+  
+// }
+
+
+// impl Person {
+//     // Constructor
+//     fn new(name: String, age: u8) -> Self {
+//         Self { name, age }
+//     }
+    
+    
+//     fn display(&self){
+//       println!("Name: {}, Age: {}", self.name, self.age);
+//     }
+// }
+
+
+// fn main() {
+//     let p1 = Person::new(String::from("neel"),20);
+    
+//     p1.display();
+// }
+
+
+//using mutable instance
+
 struct Person{
   
   name:String,         
@@ -65,11 +96,18 @@ impl Person {
     fn display(&self){
       println!("Name: {}, Age: {}", self.name, self.age);
     }
+    
+    //mutable function
+    fn change(&mut self){
+       self.name=String::from("Om prakash");
+    }
 }
 
 
 fn main() {
-    let p1 = Person::new(String::from("neel"),20);
+    let mut p1 = Person::new(String::from("neel"),20);
     
-    p1.display();
+    p1.display(); //Name: neel, Age: 20
+    p1.change();
+    p1.display();//Name: Om prakash, Age: 20
 }
