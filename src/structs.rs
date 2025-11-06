@@ -21,6 +21,31 @@
 
 
 //using implementation block
+// struct Person{
+  
+//   name:String,         
+//   age:u8,
+  
+  
+// }
+
+
+// impl Person {
+//     // Constructor
+//     fn new(name: String, age: u8) -> Self {
+//         Self { name, age }
+//     }
+// }
+
+
+// fn main() {
+//     let p1 = Person::new(String::from("neel"),20);
+//     println!("name is: {}", p1.name);
+//     println!("age is: {}", p1.age);
+// }
+
+//3]using other methods
+
 struct Person{
   
   name:String,         
@@ -35,11 +60,16 @@ impl Person {
     fn new(name: String, age: u8) -> Self {
         Self { name, age }
     }
+    
+    
+    fn display(&self){
+      println!("Name: {}, Age: {}", self.name, self.age);
+    }
 }
 
 
 fn main() {
     let p1 = Person::new(String::from("neel"),20);
-    println!("name is: {}", p1.name);
-    println!("age is: {}", p1.age);
+    
+    p1.display();
 }
