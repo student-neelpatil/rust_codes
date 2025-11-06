@@ -14,21 +14,45 @@
 
 //if-else ladder
 
-fn main() {
-    let marks = 85;
+// fn main() {
+//     let marks = 85;
 
-    if marks >= 90 {
-        println!("Grade A");
-    } 
-    else if marks >= 75 {
-        println!("Grade B");
-    } 
+//     if marks >= 90 {
+//         println!("Grade A");
+//     } 
+//     else if marks >= 75 {
+//         println!("Grade B");
+//     } 
     
-    else if marks >= 50 {
-        println!("Grade C");
-    } 
+//     else if marks >= 50 {
+//         println!("Grade C");
+//     } 
     
-    else {
-        println!("Fail");
-    }
-}
+//     else {
+//         println!("Fail");
+//     }
+// }
+
+
+//match
+
+// fn main(){
+
+//     let number:u8=2;
+
+//     match number{
+//         1=>println!("this is one"),
+//         2=>println!("this is second"),
+//         3=>println!("this is third"),
+//         _=>println!("this is default")
+//     }
+// }
+
+// fn main() {
+//     let day = "Saturday";
+
+//     match day {
+//         "Saturday" | "Sunday" => println!("Weekend!"),
+//         _ => println!("Weekday!"),
+//     }
+// }
